@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Adoção</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav>
+        <h1>Adote seu melhor aumigo aqui!</h1>
+        <img src="assets/Confira-5-curiosidades-sobre-como-e-a-visao-do-cachorro-removebg-preview.png" alt="">
+    </nav>
+
+    <h2>Para começar a adoção de seu amigo</h2><br>
+    <h2>Responda esse pequeno formulário:</h2>
+    <form id="adoption-form">
+        <label for="Nome">Nome Completo:</label><br>
+        <input type="text" id="Nome" placeholder="Digite seu Nome">
+        <br>
+
+        <label for="Email">Email:</label><br>
+        <input type="email" id="Email" placeholder="Digite seu Email">
+        <br>
+
+        <label for="Moradia">Moradia:</label>
+        <select name="moradia" id="Moradia">
+            <option value="">Selecione</option>
+            <option value="casa">Casa</option>
+            <option value="apartamento">Apartamento</option>
+        </select>
+        <br>
+        <label for="quintal">Possui Quintal?</label>
+        <input type="radio" name="quintal" value="sim>"> Sim
+        <input type="radio" name="quintal" value="nao"> Não
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
