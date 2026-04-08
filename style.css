@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     background-color: #eee2c0;
     margin: 0;
     background-image: url(assets/wallpaper_dogs.jpg);
@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .flex {
@@ -15,10 +16,12 @@ body {
 }
 
 nav {
-    background-color: rgb(253, 224, 186);
+    background-color: #FFD8B4;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
 
 }
 
@@ -26,6 +29,10 @@ nav img {
     margin-left: 10px;
     width: 250px;
     height: 100px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
 }
 
 h2 {
@@ -39,12 +46,22 @@ h3 {
 }
 
 #text_form_cabeca {
-    background-color: aliceblue;
-    width: 350px;
+    width: 450px;
     flex-direction: column;
     background-color: rgb(253, 224, 186);
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-radius: 8px;
+    border-bottom: 3px solid #cda61a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#head_cabeca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 form {
@@ -53,7 +70,9 @@ form {
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgb(184, 122, 17);
+
+
 }
 
 input {
@@ -78,7 +97,7 @@ textarea {
     width: 210px;
 }
 
-label[termos]{
+label[termos] {
     justify-content: baseline;
 }
 
@@ -89,4 +108,18 @@ form button {
     border-radius: 8px;
     border: 2px solid #ccc;
     background-color: burlywood;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: rgb(235, 166, 38);
+}
+
+#gif {
+    width: 250px;
+    height: 250px;
+    position: fixed;
+    bottom: -65px;
+    right: 10px;
 }

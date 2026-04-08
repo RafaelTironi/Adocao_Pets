@@ -10,16 +10,20 @@
 </head>
 
 <body>
-    
+
     <nav>
-        <h1>Adote seu melhor aumigo aqui!</h1>
-        <img src="assets/Confira-5-curiosidades-sobre-como-e-a-visao-do-cachorro-removebg-preview.png" alt="">
+        <div id="head_cabeca">
+            <h1>Adote seu melhor aumigo aqui!</h1>
+            <img src="assets/Confira-5-curiosidades-sobre-como-e-a-visao-do-cachorro-removebg-preview.png" alt="">
+        </div>
 
     </nav>
+
     <div id="text_form_cabeca">
-        <h2>Para começar a adoção de seu amigo</h2>
-        <h3>Responda esse pequeno formulário:</h3>
+        <h2>Para começar a audoção de seu cãomigo, responda esse pequeno formulário:</h2>
+
     </div>
+
     <form id="adoption-form">
         <label for="Nome">Nome Completo:</label><br>
         <input type="text" id="Nome" placeholder="Digite seu Nome">
@@ -29,19 +33,19 @@
         <input type="email" id="Email" placeholder="Digite seu Email">
         <br>
         <br>
-        <label for="telefone">Telefone:</label>
+        <label for="telefone">Telefone:</label><br>
         <input type="tel" id="Telefone" placeholder="Digite seu Telefone">
         <br>
         <br>
-        <label for="CPF">CPF:</label>
+        <label for="CPF">CPF:</label><br>
         <input type="text" id="CPF" placeholder="Digite seu CPF">
         <br>
         <br>
-        <label for="Idade">Idade:</label>
+        <label for="Idade">Idade:</label><br>
         <input type="number" id="Idade" placeholder="Digite sua Idade">
         <br>
         <br>
-        <label for="Cidade">Cidade:</label>
+        <label for="Cidade">Cidade:</label><br>
         <input type="text" id="Cidade" placeholder="Digite sua Cidade">
         <br>
         <br>
@@ -77,6 +81,7 @@
         <br>
         <input type="radio" name="permite" value="sim"> Sim
         <input type="radio" name="permite" value="nao"> Não
+        <input type="radio" name="permite" value="talvez"> Escolhi casa
         <br>
         <br>
         <label for="financeiro">Possui condições financeiras para cuidar de um pet?</label>
@@ -92,13 +97,15 @@
         <br>
         <br>
         <label for="termos">Aceito os termos de responsabilidade?</label>
-        <input type="checkbox" name="termos" value="sim"> 
+        <input type="checkbox" name="termos" value="sim">
         <br>
         <br>
         <button type="submit">Enviar</button>
     </form>
 
     <div id="resultado"></div>
+
+    <img id="gif" src="assets/gif_cachorro_certo.gif" alt="gif">
 
     <script src="script.js"></script>
 

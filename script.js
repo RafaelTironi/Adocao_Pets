@@ -17,14 +17,15 @@ document.getElementById("adoption-form").addEventListener("submit", function (e)
     let idade = document.getElementById("Idade").value;
     let cidade = document.getElementById("Cidade").value;
 
-    let cpfCadastrados = ["12345678901", "11111111111"];
+    let cpfCadastrados = ["125678900", "1111111111"];
 
     if (nome.length < 3) return alert("Nome Inválido");
     if (!email.includes("@")) return alert("Email Inválido");
     if (telefone.length < 8) return alert("Telefone Inválido");
-    if (cpf.length == '') return alert("CPF Inválido");
-    if (!cpfCadastrados.includes(cpf)) return alert("CPF não cadastrado");
+    if (cpfCadastrados.includes(cpf)) return alert("CPF já cadastrado");
+    if (cpf == "") return alert("CPF Obrigatório");
     if (idade < 18) return alert("Deve ser maior de 18!");
+    if (idade == "") return alert("Idade obrigatória!");
     if (cidade == "") return alert("Cidade obrigatória!");
     if (moradia == "") return alert("Moradia obrigatória!");
     if (!quintal) return alert("Informe sobre o quintal!");
