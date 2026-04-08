@@ -1,38 +1,92 @@
-body{
+body {
     font-family: Arial, sans-serif;
     background-color: #eee2c0;
     margin: 0;
-    padding-bottom: 20px;
+    background-image: url(assets/wallpaper_dogs.jpg);
+    background-position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-nav{
-    background-color: burlywood;
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: rgb(253, 224, 186);
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-nav img{
+nav img {
     margin-left: 10px;
     width: 250px;
     height: 100px;
 }
 
-h2{
-    text-align: center;
-    margin: 10px 0;
-}
-h3{
+h2 {
     text-align: center;
     margin: 10px 0;
 }
 
-form{
+h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#text_form_cabeca {
+    background-color: aliceblue;
+    width: 350px;
+    flex-direction: column;
+    background-color: rgb(253, 224, 186);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+form {
     background-color: white;
     width: 400px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    outline: none;
+}
+
+select {
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    outline: none;
+}
+
+textarea {
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    outline: none;
+    width: 210px;
+}
+
+label[termos]{
+    justify-content: baseline;
+}
+
+form button {
+    width: 400px;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    background-color: burlywood;
 }

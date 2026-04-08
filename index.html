@@ -10,13 +10,16 @@
 </head>
 
 <body>
+    
     <nav>
         <h1>Adote seu melhor aumigo aqui!</h1>
         <img src="assets/Confira-5-curiosidades-sobre-como-e-a-visao-do-cachorro-removebg-preview.png" alt="">
-    </nav>
 
-    <h2>Para começar a adoção de seu amigo</h2>
-    <h3>Responda esse pequeno formulário:</h3>
+    </nav>
+    <div id="text_form_cabeca">
+        <h2>Para começar a adoção de seu amigo</h2>
+        <h3>Responda esse pequeno formulário:</h3>
+    </div>
     <form id="adoption-form">
         <label for="Nome">Nome Completo:</label><br>
         <input type="text" id="Nome" placeholder="Digite seu Nome">
@@ -88,10 +91,8 @@
         <input type="radio" name="impulso" value="nao"> Não
         <br>
         <br>
-        <label for="termos">Aceito termos de condições?</label>
-        <br>
-        <input type="radio" name="termos" value="sim"> Sim
-        <input type="radio" name="termos" value="nao"> Não
+        <label for="termos">Aceito os termos de responsabilidade?</label>
+        <input type="checkbox" name="termos" value="sim"> 
         <br>
         <br>
         <button type="submit">Enviar</button>
